@@ -1,0 +1,33 @@
+@import "base/variables";
+
+#counter {
+	height: 50px;
+	width: 60px;
+	vertical-align: top;
+	display: inline-block;
+	
+}
+
+#counterDisplay {
+	
+	color: #dc0d29;
+	height: 32px;
+	border: 4px solid #222;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #32050C;
+	margin: 0px 6px 0px 6px;
+
+}
+
+#counterText {
+	font-size: 20px;
+}
+
+#counterLabel {
+	margin: 4px 6px 0px 6px;
+	height: 30%;
+	font-size: 10px;
+	text-align: center;
+	font-weight: bold;
+}

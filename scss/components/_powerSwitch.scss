@@ -1,0 +1,37 @@
+@import "base/variables";
+
+.powerText {
+	vertical-align: top;
+	display: inline-block;
+	line-height: 25px;
+	height: 40px;
+	width: 60px;
+	font-size: 10px;
+	color: $black;
+	font-weight: bold;
+	margin-top: 3px;
+
+}
+
+#onText {
+	text-align: right;
+}
+
+#switch {
+	background: #222;
+	vertical-align: top;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	margin-top: 5px;
+	border: 1px solid $black;
+}
+
+#power {
+	height: 16px;
+	width: 16px;
+	border-radius: 4px;
+	background-color: #3193De;
+	border: 2px solid $black;
+	position: relative;
+}

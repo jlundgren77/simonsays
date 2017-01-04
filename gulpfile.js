@@ -1,22 +1,22 @@
 'use strict'
 
 var gulp = require('gulp'),
-	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
-	rename = require('gulp-rename'),
-	sass = require('gulp-sass'),
-	maps = require('gulp-sourcemaps'),
-	del = require('del');
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    sass = require('gulp-sass'),
+    del = require('del'),
+    rename = require('gulp-rename'),
+	maps = require('gulp-sourcemaps');		
 
 gulp.task("concatScripts", function() {
 	return gulp.src([
-		'js/jquery.min.js', 
-		'js/main.js'
+		'node_modules/jquery/dist/jquery.min.js',
+		'js/main.js'	
 		])
-	.pipe(maps.init())
-	.pipe(concat('app.js'))
-	.pipe(maps.write('./'))
-	.pipe(gulp.dest('js'));
+		.pipe(maps.init())
+		.pipe(concat('app.js'))
+		.pipe(maps.write('./'))
+		.pipe(gulp.dest('js'));
 });
 
 gulp.task('minifyScripts', ['concatScripts'], function() {
