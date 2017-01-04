@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	var Game = {
-		round: 18,
+		round: 0,
 		count: 0,
 		level: 1,
 		strict: false,
@@ -52,7 +52,7 @@ $(document).ready(function() {
 			}
 			
 			
-			console.log(this.gameSequence);
+			// console.log(this.gameSequence);
 			
 			
 		},
@@ -215,16 +215,10 @@ $(document).ready(function() {
 				}, 400);
 			}
 
-			function rapidFlash() {
-				var colors = ['green', 'red', 'yellow', 'blue'];
+			// function rapidFlash() {
+			// 	var colors = ['green', 'red', 'yellow', 'blue'];
 				
-				for (i = 10; i > 0; i--) {
-					for (j = 0; j < colors.length; j++) {
-						Game.allBlink("." + colors[j], 1, 2000);
-					}
-				}
-				
-			}
+			// 	for (i=0; i < colors.length)
 		}
 
 		
